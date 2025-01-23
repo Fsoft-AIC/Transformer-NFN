@@ -1,0 +1,27 @@
+program: nfn_transformer/main.py 
+method: grid 
+project: project_name
+entity: entity_name
+name: sweep_name
+
+parameters:
+  dataset: 
+    values: ["mnist"]
+  data_path: 
+    values: ["data/mnist"]
+  enc_mode:
+    values: ["mlp"]
+  cls_mode:
+    values: ["mlp"]
+  emb_mode:
+    values: ["mlp"]
+  classifier_nfn_channels:
+    values: ["10,10", "20,20"]
+  transformers_nfn_channels:
+    values: ["10", "20"]
+  num_out_classify:
+    values: [10, 20]
+  num_out_embedding:
+    values: [10, 20]
+  num_out_encoder:
+    values: [10, 20]

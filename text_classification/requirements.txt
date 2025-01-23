@@ -1,0 +1,4 @@
+gdown
+scikit-learn
+gensim
+pandas

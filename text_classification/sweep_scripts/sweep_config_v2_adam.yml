@@ -1,0 +1,44 @@
+program: main.py
+name: default
+method: grid
+parameters:
+  seed:
+    value: 3
+  epochs:
+    value: 100
+  warmup_epochs:
+    value: 10
+  batch_size:
+    value: 128
+  n_classes:
+    value: 10
+  n_workers:
+    value: 4
+  optimizer:
+    values: ["adam", "rmsprop"]
+  lr:
+    values: [3.0e-4, 5.0e-4, 1.0e-3, 3.0e-3, 5.0e-3, 1.0e-2, 3.0e-2, 5.0e-2]
+  w_init_std:
+    values: [0.1, 0.2, 0.3, 0.4, 0.5]
+  l2_regularize:
+    values: [1.0e-8, 1.0e-7, 1.0e-6, 1.0e-4 ,1.0e-2]
+  data_path:
+    value: './data/'
+  train_fraction:
+    values: [1, 0.9, 0.8, 0.7]
+  embed_dim:
+    value: 32
+  n_attention_heads:
+    value: 2
+  forward_mul:
+    value: 2
+  n_layer:
+    value: 2
+  dropout:
+    values: [0, 0.05, 0.1, 0.15, 0.2]
+  model_path:
+    value: './model'
+  wandb_project_name:
+    value: 'default'
+  wandb_entity:
+    value: 'default'
